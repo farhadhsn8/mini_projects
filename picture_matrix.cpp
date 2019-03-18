@@ -25,7 +25,7 @@ using namespace std;
 				*(*(*(arr+ i) + j)+l)= (rand() % 256);
 			}
 	return arr;
-}
+}	
  void display(  int k,  int n,const int***  arr) 
 {
 	for (int i = 0; i < k; i++)
@@ -85,6 +85,59 @@ using namespace std;
 			for (int j = 0; j < k; ++j)
 				arr[i][j] = new const int[3];
 		}
+	}
+	int**** createVideo (int n, int width, int height)//n*height*width*3
+	{
+		
+		int **** arr = new  int***[n];
+		for (int i = 0; i < n; ++i)
+		{
+			arr[i] = new  int**[height];
+			for (int j = 0; j < height; ++j)
+			{
+				arr[i][j] = new  int *[width];
+				for (int l = 0; l < width; ++l)
+				{
+					arr[i][j][l] = new int[3];
+				}
+			}
+		}
+		srand(time(0));
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < height; j++)
+				for (int k=0;k<width;k++)
+					for (int l = 0; l < 3; l++)
+				{
+					*(*(*(*(arr + i) + j) + k) + l) = (rand() % 256);
+				}
+		return arr;
+	}
+	void display(const int ****arr, int n, int width, int height)
+	{
+			for (int i = 0; i < n; i++)
+			{
+				for (int j = 0; j < height; ++j)
+				{
+					for (int k = 0; k < width; k++)
+					{
+						cout << "[";
+						for (int l = 0; l < 3; l++)
+						{
+							cout << *(*(*(arr + i) + j) + l) << " ";
+						}
+						cout << "]";
+					}
+					cout << endl;
+				}
+				cout << "Frame " << i + 1 << ":" << endl;
+			}
+	}
+	void swapFrames( int ****arr,int f1,int f2)
+	{
+		int *** tmp;
+		tmp = *(arr + f1 - 1);
+		*(arr + f2 - 1) = tmp;
+		*(arr + f1 - 1) = *(arr + f2 - 1);
 	}
 
 int main()
