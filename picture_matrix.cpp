@@ -86,9 +86,9 @@ using namespace std;
 				arr[i][j] = new const int[3];
 		}
 	}
-	int**** createVideo (int n, int width, int height)//n*height*width*3
+	int**** createVideo (int n, int height, int width)//n*height*width*3
 	{
-		
+		int a;
 		int **** arr = new  int***[n];
 		for (int i = 0; i < n; ++i)
 		{
@@ -104,18 +104,21 @@ using namespace std;
 		}
 		srand(time(0));
 		for (int i = 0; i < n; i++)
+		
 			for (int j = 0; j < height; j++)
-				for (int k=0;k<width;k++)
+				for (int k = 0; k < width; k++)
 					for (int l = 0; l < 3; l++)
-				{
-					*(*(*(*(arr + i) + j) + k) + l) = (rand() % 256);
-				}
+					{
+						a = rand() % 256;
+						*(*(*(*(arr + i) + j) + k) + l) = a;
+					}
 		return arr;
 	}
-	void display(const int ****arr, int n, int width, int height)
+	void display(const int ****arr, int n, int height, int width)
 	{
 			for (int i = 0; i < n; i++)
 			{
+				cout << "Frame " << i + 1 << ":" << endl;
 				for (int j = 0; j < height; ++j)
 				{
 					for (int k = 0; k < width; k++)
@@ -123,32 +126,64 @@ using namespace std;
 						cout << "[";
 						for (int l = 0; l < 3; l++)
 						{
-							cout << *(*(*(arr + i) + j) + l) << " ";
+							cout << *(*(*(*(arr + i) + j)+k) + l) << " ";
 						}
 						cout << "]";
 					}
 					cout << endl;
 				}
-				cout << "Frame " << i + 1 << ":" << endl;
 			}
 	}
-	void swapFrames( int ****arr,int f1,int f2)
+	void swapFrames(int ****arr, int f1, int f2)
 	{
 		int *** tmp;
 		tmp = *(arr + f1 - 1);
-		*(arr + f2 - 1) = tmp;
 		*(arr + f1 - 1) = *(arr + f2 - 1);
+		*(arr + f2 - 1) = tmp;
+	}
+	
+	void freeMemory(int ****arr,int n,int height,int width)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = 0; j < height; ++j)
+			{
+				for (int k = 0; k < width; ++k)
+					delete[] * (*(*(arr + i) + j) + k);
+				delete[] * (*(arr + i) + j);
+			}
+			delete[] * (arr + i);
+		}
+		delete[] * arr;
 	}
 
+	void freeMemory(int ***arr,int height,int width)
+	{
+		for (int i = 0; i < height; ++i)
+		{
+			for (int j = 0; j < width; j++)
+				delete[] * (*(arr + i) + j);
+			delete[] * (arr + i);
+		}
+		delete[] * arr;
+	}
+//-------------------------test-----------------------------
 int main()
 {	
-	int ***q= createImage(3, 4);
-    const int *p1=**q ;
-	const int **p2 = &p1 ;
-	const int ***p = &p2 ;
-	display(3, 4, p);
-	/*rotateImage(p, 3, 4);
-	display(4, 3, p);*/
+	int ****q= createVideo (3, 4,5);
+	const int****p = const_cast <const int ****> (q);
+	display (p,3, 4,5);
+	cout << endl << endl << endl << endl;
+	swapFrames(q, 1, 2);
+	display(p, 3, 4, 5);
+	int***v=createImage(5, 2);
+	const int***u = const_cast <const int ***> (v);
+	cout << endl << endl << endl;
+	display (5,2,u);
+	cout << endl<< endl << endl;
+
+	
+
     return 0;
 }
 
