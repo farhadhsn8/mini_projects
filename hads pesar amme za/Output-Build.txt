@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: aadad avvalll, Configuration: Debug Win32 ------
+1>aadad avvalll.cpp
+1>aadad avvalll.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\aadad avvalll\Debug\aadad avvalll.exe
+1>aadad avvalll.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\aadad avvalll\Debug\aadad avvalll.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

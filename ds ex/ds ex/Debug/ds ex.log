@@ -1,0 +1,32 @@
+﻿  stdafx.cpp
+  ds ex.cpp
+c:\users\farhad\documents\visual studio 2017\projects\ds ex\ds ex\ds ex.cpp(30): error C2276: '!': illegal operation on bound member function expression
+c:\users\farhad\documents\visual studio 2017\projects\ds ex\ds ex\ds ex.cpp(39): error C2276: '!': illegal operation on bound member function expression
+c:\users\farhad\documents\visual studio 2017\projects\ds ex\ds ex\ds ex.cpp(51): error C2679: binary '>>': no operator found which takes a right-hand operand of type 'std::string' (or there is no acceptable conversion)
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(475): note: could be 'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_streambuf<char,std::char_traits<char>> *)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(456): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(void *&)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(438): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long double &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(420): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(double &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(401): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(float &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(383): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned __int64 &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(364): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(__int64 &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(345): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned long &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(327): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(long &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(309): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned int &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(283): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(int &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(264): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(unsigned short &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(229): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(short &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(210): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(bool &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(204): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::ios_base &(__cdecl *)(std::ios_base &))'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(198): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(193): note: or       'std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::operator >>(std::basic_istream<char,std::char_traits<char>> &(__cdecl *)(std::basic_istream<char,std::char_traits<char>> &))'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(1092): note: or       'std::basic_istream<char,std::char_traits<char>> &std::operator >><char,std::char_traits<char>,std::string&>(std::basic_istream<char,std::char_traits<char>> &&,_Ty)'
+          with
+          [
+              _Ty=std::string &
+          ]
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(1082): note: or       'std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,unsigned char &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(1075): note: or       'std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,unsigned char *)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(1068): note: or       'std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,signed char &)'
+  e:\visualllllll\vc\tools\msvc\14.10.25017\include\istream(1061): note: or       'std::basic_istream<char,std::char_traits<char>> &std::operator >><std::char_traits<char>>(std::basic_istream<char,std::char_traits<char>> &,signed char *)'
+  c:\users\farhad\documents\visual studio 2017\projects\ds ex\ds ex\ds ex.cpp(51): note: while trying to match the argument list '(std::istream, std::string)'

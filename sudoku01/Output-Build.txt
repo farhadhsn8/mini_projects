@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: sudoku01, Configuration: Debug Win32 ------
+1>sudoku01.cpp
+1>sudoku01.vcxproj -> D:\projects\cpp\sudoku01\Debug\sudoku01.exe
+1>sudoku01.vcxproj -> D:\projects\cpp\sudoku01\Debug\sudoku01.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -1,0 +1,7 @@
+﻿  Skipping... (no relevant changes detected)
+  stdafx.cpp
+  picture_matrix.cpp
+c:\users\farhad\documents\visual studio 2017\projects\picture_matrix\picture_matrix\picture_matrix.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\farhad\documents\visual studio 2017\projects\picture_matrix\picture_matrix\picture_matrix.cpp(105): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  picture_matrix.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\picture_matrix\Debug\picture_matrix.exe
+  picture_matrix.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\picture_matrix\Debug\picture_matrix.pdb (Partial PDB)

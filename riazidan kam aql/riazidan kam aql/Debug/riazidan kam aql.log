@@ -1,0 +1,4 @@
+﻿  Skipping... (no relevant changes detected)
+  stdafx.cpp
+  riazidan kam aql.cpp
+c:\users\farhad\documents\visual studio 2017\projects\riazidan kam aql\riazidan kam aql\riazidan kam aql.cpp(37): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?

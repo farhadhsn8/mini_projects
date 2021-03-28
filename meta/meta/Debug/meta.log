@@ -1,0 +1,4 @@
+﻿  meta.cpp
+c:\users\farhad\documents\visual studio 2017\projects\meta\meta\meta.cpp(22): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  meta.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\meta\Debug\meta.exe
+  meta.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\meta\Debug\meta.pdb (Partial PDB)

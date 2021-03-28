@@ -1,0 +1,5 @@
+﻿  doosti reshteha.cpp
+c:\users\farhad\documents\visual studio 2017\projects\doosti reshteha\doosti reshteha\doosti reshteha.cpp(23): warning C4018: '<': signed/unsigned mismatch
+c:\users\farhad\documents\visual studio 2017\projects\doosti reshteha\doosti reshteha\doosti reshteha.cpp(25): warning C4018: '<': signed/unsigned mismatch
+  doosti reshteha.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\doosti reshteha\Debug\doosti reshteha.exe
+  doosti reshteha.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\doosti reshteha\Debug\doosti reshteha.pdb (Partial PDB)

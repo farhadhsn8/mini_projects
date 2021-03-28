@@ -1,0 +1,7 @@
+﻿1>------ Build started: Project: meqdar yek majmoe, Configuration: Debug Win32 ------
+1>Skipping... (no relevant changes detected)
+1>stdafx.cpp
+1>meqdar yek majmoe.cpp
+1>meqdar yek majmoe.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\meqdar yek majmoe\Debug\meqdar yek majmoe.exe
+1>meqdar yek majmoe.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\meqdar yek majmoe\Debug\meqdar yek majmoe.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

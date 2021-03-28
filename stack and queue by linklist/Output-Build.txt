@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: stack and queue by linklist, Configuration: Debug Win32 ------
+1>stack and queue by linklist.cpp
+1>stack and queue by linklist.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\stack and queue by linklist\Debug\stack and queue by linklist.exe
+1>stack and queue by linklist.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\stack and queue by linklist\Debug\stack and queue by linklist.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

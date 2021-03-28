@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  8 queen_hill climbing.cpp
+c:\users\farhad\documents\visual studio 2017\projects\8 queen_hill climbing\8 queen_hill climbing\8 queen_hill climbing.cpp(98): warning C4101: 'score': unreferenced local variable
+c:\users\farhad\documents\visual studio 2017\projects\8 queen_hill climbing\8 queen_hill climbing\8 queen_hill climbing.cpp(168): warning C4101: 'col': unreferenced local variable
+c:\users\farhad\documents\visual studio 2017\projects\8 queen_hill climbing\8 queen_hill climbing\8 queen_hill climbing.cpp(167): warning C4101: 'access': unreferenced local variable
+c:\users\farhad\documents\visual studio 2017\projects\8 queen_hill climbing\8 queen_hill climbing\8 queen_hill climbing.cpp(208): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  8 queen_hill climbing.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\8 queen_hill climbing\Debug\8 queen_hill climbing.exe
+  8 queen_hill climbing.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\8 queen_hill climbing\Debug\8 queen_hill climbing.pdb (Partial PDB)

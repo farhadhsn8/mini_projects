@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  ConsoleApplication5.cpp
+c:\users\farhad\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\consoleapplication5.cpp(131): error C2065: 'cin': undeclared identifier
+c:\users\farhad\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\consoleapplication5.cpp(142): error C2065: 'cout': undeclared identifier
+c:\users\farhad\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\consoleapplication5.cpp(144): error C2065: 'cout': undeclared identifier
+c:\users\farhad\documents\visual studio 2017\projects\consoleapplication5\consoleapplication5\consoleapplication5.cpp(144): error C2065: 'endl': undeclared identifier

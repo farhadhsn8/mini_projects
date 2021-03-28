@@ -1,0 +1,7 @@
+﻿  Skipping... (no relevant changes detected)
+  stdafx.cpp
+  doosti string.cpp
+c:\users\farhad\documents\visual studio 2017\projects\doosti string\doosti string\doosti string.cpp(20): warning C4018: '<': signed/unsigned mismatch
+c:\users\farhad\documents\visual studio 2017\projects\doosti string\doosti string\doosti string.cpp(22): warning C4018: '<': signed/unsigned mismatch
+  doosti string.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\doosti string\Debug\doosti string.exe
+  doosti string.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\doosti string\Debug\doosti string.pdb (Partial PDB)

@@ -1,0 +1,8 @@
+﻿1>------ Build started: Project: picture_matrix, Configuration: Debug Win32 ------
+1>picture_matrix.cpp
+1>c:\users\farhad\documents\visual studio 2017\projects\picture_matrix\picture_matrix\picture_matrix.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+1>c:\users\farhad\documents\visual studio 2017\projects\picture_matrix\picture_matrix\picture_matrix.cpp(105): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+1>picture_matrix.vcxproj -> C:\Users\Farhad\documents\visual studio 2017\Projects\picture_matrix\Debug\picture_matrix.exe
+1>picture_matrix.vcxproj -> C:\Users\Farhad\documents\visual studio 2017\Projects\picture_matrix\Debug\picture_matrix.pdb (Partial PDB)
+1>Done building project "picture_matrix.vcxproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -1,0 +1,5 @@
+﻿  komak b babaE.cpp
+c:\users\farhad\documents\visual studio 2017\projects\komak b babae\komak b babae\komak b babae.cpp(24): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\farhad\documents\visual studio 2017\projects\komak b babae\komak b babae\komak b babae.cpp(8): warning C4101: 'l': unreferenced local variable
+  komak b babaE.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\komak b babaE\Debug\komak b babaE.exe
+  komak b babaE.vcxproj -> C:\Users\Farhad\Documents\Visual Studio 2017\Projects\komak b babaE\Debug\komak b babaE.pdb (Partial PDB)

@@ -1,0 +1,12 @@
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\_8q.apk.recipe
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\_8q.apk.recipe.merged
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\libs\x86\lib_8q.so
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\libs\x86\gdbserver
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\libs\x86\libgnustl_static.a
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\res\values\strings.xml
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\AndroidManifest.xml
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\project.properties
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\Package\build.xml
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\FileStringReplace.incremental
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\_8q.apk
+c:\users\farhad\documents\visual studio 2017\Projects\8q\8q\8q.Packaging\x86\Debug\_8q.lastsuccessfuldeploy

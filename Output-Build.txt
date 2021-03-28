@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: sortig, Configuration: Debug Win32 ------
+1>sortig.cpp
+1>sortig.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\sortig\Debug\sortig.exe
+1>sortig.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\sortig\Debug\sortig.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

@@ -1,0 +1,4 @@
+﻿  cellular automata.cpp
+c:\users\farhad\documents\visual studio 2017\projects\cellular automata\cellular automata\cellular automata.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  cellular automata.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\cellular automata\Debug\cellular automata.exe
+  cellular automata.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\cellular automata\Debug\cellular automata.pdb (Partial PDB)

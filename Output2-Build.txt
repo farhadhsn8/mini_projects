@@ -1,0 +1,5 @@
+﻿1>------ Build started: Project: p_2_of_videos, Configuration: Debug Win32 ------
+1>p_2_of_videos.cpp
+1>p_2_of_videos.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\p_2_of_videos\Debug\p_2_of_videos.exe
+1>p_2_of_videos.vcxproj -> c:\users\farhad\documents\visual studio 2017\Projects\p_2_of_videos\Debug\p_2_of_videos.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

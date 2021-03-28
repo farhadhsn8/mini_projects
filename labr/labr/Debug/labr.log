@@ -1,0 +1,23 @@
+﻿  stdafx.cpp
+  vertex.cpp
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(15): error C2061: syntax error: identifier 'vertex'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(16): error C2143: syntax error: missing ';' before '*'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(16): error C2238: unexpected token(s) preceding ';'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(17): error C2061: syntax error: identifier 'vertex'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(18): error C2143: syntax error: missing ';' before '*'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(18): error C2238: unexpected token(s) preceding ';'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(21): error C2143: syntax error: missing ';' before '*'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(21): error C2238: unexpected token(s) preceding ';'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(22): error C2143: syntax error: missing ';' before '*'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(22): error C2238: unexpected token(s) preceding ';'
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(12): error C2065: 'from': undeclared identifier
+c:\users\farhad\documents\visual studio 2017\projects\labr\labr\edge.h(13): error C2065: 'to': undeclared identifier
+  Vectorr.cpp
+  objectt.cpp
+  labr.cpp
+  edge.cpp
+  Generating Code...
