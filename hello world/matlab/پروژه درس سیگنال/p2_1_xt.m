@@ -1,0 +1,11 @@
+t=-10:0.01:10;
+xt= -ramp2(-2) .* (t>=-2 & t<-1) +2*ramp2(-1)-1 .*(t>=-1 & t<0) + u_step(0) .*(t>=0 & t<2);
+y= xt;
+subplot(2,2,1); 
+stem(t,xr(y),'b');
+subplot(2,2,2);
+stem(t,xo(y),'r');
+subplot(2,2,3);
+stem(t,xe(y),'g');
+subplot(2,2,4);
+stem(t,xl(y),'y');

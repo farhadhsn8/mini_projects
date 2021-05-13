@@ -1,0 +1,12 @@
+s=[]
+s.append("a")
+s.append("b")
+s.append("d")
+s.append("c")
+s.append("f")
+x=s.pop()
+s.pop()
+s.pop()
+print(x)
+s.append(x)
+print(len(s))

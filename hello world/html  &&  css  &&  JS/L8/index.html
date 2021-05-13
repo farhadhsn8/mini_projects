@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            width:200px ;
+            height: 200px;
+            background-color:goldenrod ;
+            animation:cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .d1{
+            color: hotpink;
+            background-color: lavenderblush;
+            animation: ease();
+        }
+    </style>
+    <script type="text/javascript">
+        function change()
+        {
+            //document.getElementById("d1").innerHTML="\n salam ";
+            var myp=document.getElementById("d1").getElementsByTagName("p");//myp is an array
+            for(let i=0;i<myp.length;i++)
+            {
+                myp[i].innerHTML="  i am "+eval(i+1)+" nd p tag ^_^ \n\n";
+                myp[i].style.colorInterpolationFilters="#F578D2";
+                myp[i].style.color="red";
+                myp[i].style.floodColor="blue";
+                myp[i].style.margin="25px";
+                myp[i].style.borderStyle="dashed";
+                myp[i].style.borderColor="#15C8B2";
+                myp[i].style.borderWidth="5px";
+            } 
+        }
+
+        function childs()
+            {
+               //alert(document.getElementById("d1"));
+               //alert("salam");
+               alert("number of childs : "+ document.getElementById("d1").childNodes.length);
+               document.getElementById("d1").childNodes[4].innerHTML="node 4 om \n";
+               document.getElementById("d1").childNodes[5].innerHTML="node 5 om \n";
+               document.getElementById("d1").childNodes[5].style.color="green";
+            }
+    
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="click me" onclick="change()"/>
+    <input type="button" value="children" onclick="childs()"/>
+    <div id="d1" >
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+    </div>
+    
+</body>
+</html>

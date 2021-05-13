@@ -1,0 +1,20 @@
+{C:/Users/Farhad/Desktop/zzzzzz/????? ??? vhdl/myALU.vhd} {0 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/Farhad/Desktop/zzzzzz/????? ??? vhdl/myALU.vhd}
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+** Error: (vcom-7) Failed to open design unit file "C:/Users/Farhad/Desktop/zzzzzz/ „—Ì‰ «Ê· vhdl/myALU.vhd" in read mode.
+No such file or directory. (errno = ENOENT)
+
+} {3.0 4.0} {}} D:/project/VHDL/firstProject.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none {D:\project\VHDL\firstProject.vhd}
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+** Error (suppressible): D:\project\VHDL\firstProject.vhd(2): (vcom-1491) Empty source files.
+
+} {} {}} C:/Users/Farhad/Desktop/vhdlproject2/prjalu.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/Users/Farhad/Desktop/vhdlproject2/prjalu.vhd
+Model Technology ModelSim SE-64 vcom 10.6d Compiler 2018.02 Feb 24 2018
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture behavior of ALU
+
+} {} {}}

@@ -1,0 +1,19 @@
+.maintbl{
+    width:800px;
+    margin: 0 auto;
+    border:solid 1px #ccc;
+}
+.maintbl td{
+    height: 45px;
+    line-height:30px;
+    font-family: verdana;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+.maintbl th{
+    background-color: #F25548;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+}

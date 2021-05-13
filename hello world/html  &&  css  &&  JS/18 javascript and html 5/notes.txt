@@ -1,0 +1,15 @@
+che chizi dar che moroorgari mojaz gast:
+    caniuse.com
+    modernizr.com (kheili mohemmm)
+
+method for show media:
+    .play();
+    .pause();
+    .currentTime = 0;
+    myVideo.addEventListener("ended" , function(){},false);
+
+zakhire krdn maqadir da hafeze mahalli :
+    localStorage["username"]=name;
+    var name = localStorage["username"];
+
+web worker (kheili mohem hastan)

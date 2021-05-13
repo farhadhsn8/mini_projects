@@ -1,0 +1,17 @@
+mokhtasar kardan code ha baraye load speed behtar:
+APPS:
+    jsmin
+    yui compressor
+    google closure compiler
+
+SITE:
+    javascript-minifier.com  //save code by this name : main.min.js
+
+site for find errors and bugs
+    jslint.com
+
+jquery is a library of js
+
+search new javascript library
+
+cdn : code haye amade k dar internet hast va ma b anha mottasel mishavim

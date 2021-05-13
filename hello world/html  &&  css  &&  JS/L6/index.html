@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script  type="text/javascript">
+
+        /*Events:
+            onload
+            onfocus
+            onblur
+            onkeyup      raha shdan klid dar text box  ,  input
+            onkeydown    feshordan klid
+            onmouseover
+            onmouseout
+            ondblclick
+            oncontextmenu  //dg click rast va namayesh menu kar nmikone
+            onsubmit   hengam submit krdn mitoonim validate konim
+        */
+        function txt_focus()
+        {
+            alert("in input ");
+        }
+
+        function txt_blur()
+        {
+            alert("out input ");
+        }
+
+        function txt1_keyup(e)//take event
+        {
+            if(e.keyCode==8)
+            {
+                var a= document.getElementById("counter").innerHTML;
+                document.getElementById("counter").innerHTML=eval(a)-1;
+            }
+            else 
+            {
+                var a= document.getElementById("counter").innerHTML;
+           document.getElementById("counter").innerHTML=eval(a)+1;
+            }
+        }
+
+    </script>
+   
+</head>
+<body>
+     <input type="text" id="txt1"  onfocus="txt_focus()"/>
+     write youre name<input type="text" id="txt2" onblur="txt_blur()" onkeyup="txt1_keyup(event)"/>
+     <span id="counter">0</span>
+</body>
+</html>

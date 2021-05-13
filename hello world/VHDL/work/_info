@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech64_10.6d/examples
+T_opt
+!s110 1587497535
+V^XJ[zn]7fa=g7U[gJHQf=1
+04 3 8 work alu behavior 1
+=1-1831bf1afbed-5e9f4a3e-3ce-32b4
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+Ealu
+Z0 w1586818609
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/project/VHDL
+Z5 8C:/Users/Farhad/Desktop/vhdlproject2/prjalu.vhd
+Z6 FC:/Users/Farhad/Desktop/vhdlproject2/prjalu.vhd
+l0
+L7
+VY=6O[@J4Di[haO>EW7l761
+!s100 8A8kUITf8]gQZDzA3]eEY3
+Z7 OL;C;10.6d;65
+32
+Z8 !s110 1587497397
+!i10b 1
+Z9 !s108 1587497397.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/Farhad/Desktop/vhdlproject2/prjalu.vhd|
+Z11 !s107 C:/Users/Farhad/Desktop/vhdlproject2/prjalu.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 Y=6O[@J4Di[haO>EW7l761
+l66
+L17
+Vd@b7nE=QS1o^]SXk>=]d]3
+!s100 h@3L8Aiz34bal=1L=[a_92
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13

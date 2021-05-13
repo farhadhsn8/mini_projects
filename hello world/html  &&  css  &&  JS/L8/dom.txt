@@ -1,0 +1,6 @@
+document object model
+    1 sakhtar deakhti ke browser code ha ra ba an model mikond.
+    har tag dar drkht b node ha tbdil mishvnd.
+    in drkht 1 rishe asli be nam document ba 1 rishe farE be nam html dard.
+    ba estefade az in : safhe html , css ra mitavanim da hein ejra taqieer dahim.
+    

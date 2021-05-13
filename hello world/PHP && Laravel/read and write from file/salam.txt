@@ -1,0 +1,6 @@
+name : farhad
+Lname : hosseini
+age : 21
+job : student
+student_id : 9612358016
+ss_id : 0311972381

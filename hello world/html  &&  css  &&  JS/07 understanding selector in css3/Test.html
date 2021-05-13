@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>test page</title>
+    <style media="screen">
+      body{
+        font-family: verdana;
+      }
+      p{
+        color: white;
+        background-color: red;
+      }
+
+      article header p{
+        color: black;
+        background-color: yellow;
+      }
+      article>p{
+        font-weight: bold;
+      }
+
+      article p:first-child{
+        color:lightblue;
+        background-color: black;
+      }
+      /* Class and ID */
+      .highlight{
+        background-color: violet;
+        color:lightgreen;
+        border:3px solid;
+        border-color: #8732ad;
+      }
+
+      #para1{
+        font-style: oblique;
+        color: #1232ab;
+        background-color: #adffbc;
+      }
+
+      .heading1{
+        color: green;
+        font-weight: bold;
+        font-size: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <p class="heading1">This is in h1</p>
+        <p class="autor">This is a paragraph</p>
+      </header>
+        <p id="para1">This is a paragraph 1</p>
+        <p>This is a paragraph 2</p>
+        <p class="highlight">This is a paragraph 3</p>
+        <p>This is a paragraph 4</p>
+    </article>
+  </body>
+</html>

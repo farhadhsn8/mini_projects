@@ -1,0 +1,40 @@
+accessing form elements:
+    document.forms.nameOfForm
+    document.forms.nameOfForm.nameOfElement
+
+    myTextField.value
+
+EVENTS:
+    onfocus
+    onblur
+    onkeypress
+    onkeydown
+    onkeyup
+
+checkbox and radio button:
+    mycheckbox.checked  //return boolean
+
+EVENTS: 
+    onclick
+    onchange
+
+option list and combobox
+    mylist.type  // return select-one   or   select multiple
+    mylist.options[i].selected   // return true or false
+
+EVENTS:
+    onchange
+    onsubmit
+-----------------------------------------------------------------------------
+
+UI enhancement:
+
+    myElement.className = "myBorders";
+
+    myElement.style.backgroundColor = "yellow";
+    myElement.style.color = "#f43832";
+    myElement.style.left = "40px";
+    myElement.style.backgroundRepeat= "repeat-x";
+
+
+

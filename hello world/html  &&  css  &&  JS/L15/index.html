@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">//--------window & bom--------------
+        //document.getElementById()=====window.document.getElementById()
+        window.innerHeight;
+        //document.documentElement.clientHeight;
+       // document.body.clientHeight;
+        //chon dar barkhi moroorgar ha ejra nmishavand 
+       // var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        var win;
+        function btnClick()
+        {
+            win = window.open("http://www.google.com","","_blank");
+        }
+        function btnClose()
+        {
+            win.close();
+        }
+        window.moveTo(600,700);
+        window.resizeTo(400,700);
+        window.history.length;
+        window.history.forward();
+        window.history.back();
+        //------------------------------very important------------------
+        //setInterval(function(){alert()} , 3000);
+        setTimeout(function(){alert("3 secs")},3000);
+        
+        function timer()
+        {
+            var d = new Date();
+            document.getElementById('timer').innerHTML=d.toLocaleTimeString();
+        }
+        var ti = setInterval(function(){timer()},1000);
+        var state= true;
+        function pauseTime(btn)
+        {
+            
+            if (state)
+            {
+                clearInterval(ti);
+                btn.value="play";
+                state=false;
+            }
+            else
+            {
+                ti=setInterval(function(){timer()},1000);
+                btn.value="pause";
+                state = true;
+            }
+
+        }
+        
+
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="open window" onclick="btnClick()"/>
+    <input type="button" value="close window" onclick="btnClose()"/>
+    <br/>
+    <span style="background-color: aqua; color: coral; font-size: 45px;" id="timer"></span>
+    <br>
+    <br>
+    <input type="button" value="pause" onclick="pauseTime(this)"/>
+
+</body>
+</html>

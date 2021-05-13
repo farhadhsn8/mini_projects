@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>events and event listener</title>
+</head>
+<body>
+    <button>run some javascript</button>
+    <button>remove some events</button>
+    <div>
+        <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Animi fuga fugiat illo error fugit nobis repellat porro as
+             sumenda quis modi reiciendis ipsam consequuntur, optio,
+              sit quisquam necessitatibus minus.
+               Nostrum, explicabo.</p>
+    </div>
+    <script>
+        /*
+        //revesh 1 (behtarin ravesh):
+
+        var myelement = document.getElementsByTagName("button");
+        myelement[0].onclick= function(){
+            alert("hello world ...");
+        };
+
+        myelement[1].onclick= function(){
+            document.removeEventListener('click',myfunction,false);
+            alert("event was removed !!!");
+        };
+
+        //ravesh 2:
+        function myfunction()
+        {
+            alert("document clicked !!");
+        }
+        //click bar rooye kolle safhe
+        document.addEventListener('click', myfunction,false);
+        */
+        var mydiv = document.getElementById("myp");
+       function showmessage()
+       {
+           mydiv.setAttribute("color",red);
+       }
+
+       setInterval(showmessage,1500);
+
+    </script>
+</body>
+</html>

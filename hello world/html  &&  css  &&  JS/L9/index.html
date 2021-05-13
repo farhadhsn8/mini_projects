@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        //be hengam barname nevisi js bayad drkht dom ra hamishe tasavvor konim
+         var s =2;
+         var html1 = document.getElementsByTagName("html");
+         alert(html1[0].innerHTML);//mohtavaye html ra midehad 
+        function addNewLink()
+        {
+            var a = document.createElement('a');
+            a.innerHTML="  link"+s;
+            a.id="d"+s;
+            a.href="#";
+            a.onmouseover=function(){
+                alert("salam");
+            }
+            var div=document.getElementById('div1');
+           // div.appendChild(a);//add an element end of other element(akharin farzand)
+           var d = document.getElementById('d2');
+           div.insertBefore(a,d);
+            s++;
+        }
+
+        function removeLink()
+        {
+            var a = document.getElementById("div1");
+            var child = document.getElementsByTagName("a");
+            a.removeChild(child[s-1]);
+            s--;
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Add link" onclick="addNewLink()"/>
+    <input type="button" value="remove link" onclick="removeLink()"/>
+    <div id="div1">
+        <a href="#" id="d1">link 1</a>
+        <a href="#" id="d2">link n</a>
+    </div>
+</body>
+</html>

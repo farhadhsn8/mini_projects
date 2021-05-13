@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function getNumbers()
+        {
+            var n1=parseInt(prompt("first number : "));//tabdil reshte b adad
+            var n2 = eval(prompt("second number : "));//tabdil resgte b adad
+            var op = prompt("operator : ");
+            var result = calc(n1,n2,op);
+            alert(result);
+        }
+
+        function calc (num1,num2,operator)
+        {
+            switch(operator)
+            {
+                case "+": return num1+num2;
+                case "-": return num1-num2;
+                case "*": return num1*num2;
+                case "/": return num1/num2; 
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getNumbers()">
+    
+</body>
+</html>

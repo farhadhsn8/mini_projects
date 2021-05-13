@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var T = [];
+        var n =50;//n rial
+        T[0]=0;
+        T[1]=1;
+        T[2]=1;
+        T[3]=2;
+        T[4]=2;
+        T[5]=1;
+        T[6]=2;
+        T[7]=2;
+        T[8]=3;
+        T[9]=3;
+        T[10]=1;
+        T[11]=2;
+        
+        for(let i=12;i<=n;i++)
+        {
+            T[i]=1+ min(T[i-1],T[i-2],T[i-5],T[i-10],T);
+        }
+        alert("array T is : "+T);
+    alert("T[47] is : "+ eval(T[47]));
+        
+        function min(a,b,c,d,T)
+        {
+            var min =100000;
+            if(a<min)
+                min=a;
+            if(b<min)
+                min=b;
+            if(c<min)
+                min=c;
+            if(d<min)
+                min=d;
+            return(min);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

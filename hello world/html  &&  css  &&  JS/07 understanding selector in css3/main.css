@@ -1,0 +1,48 @@
+h1{
+  color:green;
+}
+
+article header p{
+  background-color: red;
+  color: white;
+}
+article figure{
+  width: 600px;
+  height: 360px;
+  border:3px dashed blue;
+  padding: 5px;
+}
+img {
+  width: 100%;
+}
+article{
+  width: 750px;
+}
+body{
+  font-family: verdana;
+}
+.site-nav-ul{
+  background-color: paleVioletred;
+  list-style: none;
+  padding: 0;
+  width: 200px;
+  border: 1px solid mediumvioletred;
+}
+
+.site-nav-item{
+  border-bottom:1px solid mediumvioletred;
+  padding: 5px;
+}
+
+.site-nav-item:last-child{/*بسیار مهم*/
+  border-bottom: none;
+}
+
+.site-nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-nav-item a:hover{
+   background-color:#842266;
+}

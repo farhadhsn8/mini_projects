@@ -1,0 +1,6 @@
+Events :
+        onload
+        on click
+        onmouseover
+        onblur
+        onfocus
