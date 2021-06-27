@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
@@ -38,6 +43,37 @@ Route::prefix('/about')->group(function (){
 
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('/flights')->group(function (){
+    Route::get('',function (){
+        $flights = DB::table('flights')->get();
+        return view('flights')->with('flights',$flights);
+    });
+
+
+    Route::get('/insert/{name}/{airline}',function ($name,$airline){
+         DB::table('flights')->insert([
+            'name'=>$name,
+            'airline'=>$airline,
+            'information' =>'safar khoobi dashte bashid...'
+        ]);
+
+        $flights = DB::table('flights')->get();
+        return view('flights')->with('flights',$flights);
+
+    });
+
+    Route::get('/update/{id}/{name}/{airline}',function ($id ,$name,$airline){
+         DB::table('flights')->where('id',$id)->update([
+            'name'=>$name,
+            'airline'=>$airline,
+            'information' =>'safar khoobi nadashte bashid!!!!'
+        ]);
+
+        $flights = DB::table('flights')->get();
+        return view('flights')->with('flights',$flights);
+    });
+
+
+});
+
