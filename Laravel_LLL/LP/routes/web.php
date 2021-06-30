@@ -1,6 +1,9 @@
 <?php
 
 use App\Models\Flight;
+use App\Models\User;
+use App\Models\Warehouse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -180,13 +183,26 @@ Route::get('f7',function (){
 Flight::where('active', 1)
     ->where('destination', 'San Diego')
     ->update(['delayed' => 1]);*/
+Route::get('warehouse/create',function (){
+    return view('warehouse_management.warehouse.addWarehouse');
+})->name('warehouse.create');
+
+Route::post('warehouse/store' , function (){
+   // dd(request()->all());
+    Warehouse::create([
+        'name'=>request('name'),
+        'address' => \request('address')
+    ]);
+    return redirect('warehouse/show');
+})->name('warehouse.store');
 
 
+Route::get('warehouse/show',function (){
+    $warehouses = Warehouse::all();
+   return view('warehouse_management.warehouse.warehouses')->with('warehouses',$warehouses);
 
 
+})->name('warehouses.show');
 
 
 //$deletedRows = Flight::where('active', 0)->delete();
-
-
-
