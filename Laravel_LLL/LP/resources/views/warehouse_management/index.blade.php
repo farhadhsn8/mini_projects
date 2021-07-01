@@ -13,17 +13,26 @@
 
 <div class="container">
     <h2>منوی اصلی </h2>
+    <img align="right" src="img/th1.jpg" width="120" height="120">
+
     <a href="{{route('warehouses.show')}}" class="btn btn-info btn-lg active" role="button" aria-pressed="true">لیست انبارها</a>
     <a href="#" class="btn btn-info btn-lg active" role="button" aria-pressed="true">لیست محصولات</a>
     <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">افزودن محصول</a>
     <a href="{{route('warehouse.create')}}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">افزودن انبار</a>
-        <img align="right" src="img/keshmoon1.png" width="120" height="120">
-
 
     <hr>
     <hr>
     <hr>
 
+@if($errors->any())
+    <div class="alert-danger">
+        <ul>
+            @foreach($errors->all() as $i)
+                <li>{{$i}}</li>
+            @endforeach
+        </ul>
+        @endif
+    </div>
 
 @yield('content')
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\WarehouseController;
 use App\Models\Flight;
 use App\Models\User;
 use App\Models\Warehouse;
@@ -7,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Validator;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +21,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Auth::routes();
 
@@ -183,26 +183,19 @@ Route::get('f7',function (){
 Flight::where('active', 1)
     ->where('destination', 'San Diego')
     ->update(['delayed' => 1]);*/
-Route::get('warehouse/create',function (){
-    return view('warehouse_management.warehouse.addWarehouse');
-})->name('warehouse.create');
-
-Route::post('warehouse/store' , function (){
-   // dd(request()->all());
-    Warehouse::create([
-        'name'=>request('name'),
-        'address' => \request('address')
-    ]);
-    return redirect('warehouse/show');
-})->name('warehouse.store');
 
 
-Route::get('warehouse/show',function (){
-    $warehouses = Warehouse::all();
-   return view('warehouse_management.warehouse.warehouses')->with('warehouses',$warehouses);
+Route::get('/',[WarehouseController::class, 'showAll'])->name('warehouses.show');
 
+Route::get('warehouse/create',[WarehouseController::class, 'create'])->name('warehouse.create');
 
-})->name('warehouses.show');
+Route::post('warehouse/store' ,[WarehouseController::class, 'store'])->name('warehouse.store');
 
+Route::get('warehouse/show1/{id}',[WarehouseController::class, 'show1'])->name('warehouse.show1');
+
+Route::put('warehouse/update/{id}' ,[WarehouseController::class, 'update'])->name('warehouse.update');
+
+Route::delete('warehouse/delete/{id}',[WarehouseController::class, 'delete'])->name('warehouse.delete');
 
 //$deletedRows = Flight::where('active', 0)->delete();
+

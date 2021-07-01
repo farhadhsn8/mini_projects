@@ -8,6 +8,9 @@
             <th>نام انبار</th>
             <th>آدرس</th>
             <th>محصولات</th>
+            <th>ویرایش</th>
+            <th>حذف</th>
+
 
         </tr>
         </thead>
@@ -26,7 +29,17 @@
             @endif
                     <td>{{$w->name}}</td>
                     <td>{{$w->address}}</td>
-                    <td><a href="#" class="btn btn-danger btn-xs"> نمایش محصولات</a></td>
+                    <td><a href="#" class="btn btn-warning btn-xs"> نمایش محصولات</a></td>
+                    <td><a href="{{route('warehouse.show1',$w->id)}}" class="btn btn-success btn-xs"> ویرایش </a></td>
+                    <td>
+                        <form action="{{route('warehouse.delete',$w->id)}}" method="POST">
+                            @csrf
+                            @method('delete')
+                            <button type="submit" class="btn btn-danger btn-xs"> حذف </button>
+                        </form>
+                    </td>
+
+
                 </tr>
                 @php
                     $i++;
