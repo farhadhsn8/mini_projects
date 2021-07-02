@@ -1,0 +1,8 @@
+int a
+float mytemp
+bool flag
+class person
+int age
+bool gender
+float height
+func speak ()
