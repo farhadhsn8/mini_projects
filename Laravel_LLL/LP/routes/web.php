@@ -191,11 +191,11 @@ Route::get('warehouse/create',[WarehouseController::class, 'create'])->name('war
 
 Route::post('warehouse/store' ,[WarehouseController::class, 'store'])->name('warehouse.store');
 
-Route::get('warehouse/show1/{id}',[WarehouseController::class, 'show1'])->name('warehouse.show1');
+Route::get('warehouse/show1/{warehouse}',[WarehouseController::class, 'show1'])->name('warehouse.show1');
 
-Route::put('warehouse/update/{id}' ,[WarehouseController::class, 'update'])->name('warehouse.update');
+Route::put('warehouse/update/{warehouse}' ,[WarehouseController::class, 'update'])->name('warehouse.update');
 
-Route::delete('warehouse/delete/{id}',[WarehouseController::class, 'delete'])->name('warehouse.delete');
+Route::delete('warehouse/delete/{warehouse}',[WarehouseController::class, 'delete'])->name('warehouse.delete');
 
 //$deletedRows = Flight::where('active', 0)->delete();
 

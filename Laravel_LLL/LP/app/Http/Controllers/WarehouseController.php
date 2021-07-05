@@ -45,8 +45,7 @@ class WarehouseController extends Controller
 
 
 
-    public function show1($id){
-        $warehouse = Warehouse::find($id);
+    public function show1(Warehouse $warehouse){
         return view('warehouse_management.warehouse.updateWarehouse')->with('warehouse',$warehouse);
     }
 
@@ -56,7 +55,7 @@ class WarehouseController extends Controller
 
 
 
-   public function update($id){
+   public function update(Warehouse $warehouse){
         // dd(request()->all());
         $validator = Validator::make(request()->all(), [
             'name' => 'required|max:255',
@@ -68,7 +67,6 @@ class WarehouseController extends Controller
                 ->withInput();
         }
 
-        $warehouse = Warehouse::findOrFail($id);
         $warehouse->update([
             'name'=>request('name'),
             'address' => \request('address')
