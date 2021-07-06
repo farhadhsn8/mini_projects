@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\TestMail;
 use App\Models\Warehouse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class WarehouseController extends Controller
@@ -78,8 +80,9 @@ class WarehouseController extends Controller
 
 
     public function delete($id){
-        $warehouse = Warehouse::findOrFail($id);
+        $warehouse=Warehouse::findOrFail($id);
         $warehouse->delete();
+        Mail::to('farhadhsn8@gmail.com')->send(new TestMail($warehouse));
         return back();
     }
 }
