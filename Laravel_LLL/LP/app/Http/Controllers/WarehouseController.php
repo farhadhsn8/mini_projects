@@ -12,9 +12,11 @@ class WarehouseController extends Controller
 {
 
 
-    public function showAll(){
+    public function showAll(Request $request){
         $warehouses = Warehouse::all();
-        return view('warehouse_management.warehouse.warehouses')->with('warehouses',$warehouses);
+//        $value = $request->session();
+//        dd($value);
+         return view('warehouse_management.warehouse.warehouses')->with('warehouses',$warehouses);
     }
 
 
