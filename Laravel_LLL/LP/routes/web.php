@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\WarehouseController;
 use App\Models\Flight;
 use App\Models\User;
@@ -196,6 +197,8 @@ Route::get('warehouse/show1/{warehouse}',[WarehouseController::class, 'show1'])-
 Route::put('warehouse/update/{warehouse}' ,[WarehouseController::class, 'update'])->name('warehouse.update');
 
 Route::delete('warehouse/delete/{warehouse}',[WarehouseController::class, 'delete'])->name('warehouse.delete');
+
+Route::get('article',[ArticleController::class, 'show'])->name('article.show');
 
 //$deletedRows = Flight::where('active', 0)->delete();
 
