@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\WarehouseController;
 use App\Models\Flight;
 use App\Models\User;
@@ -192,13 +193,31 @@ Route::get('warehouse/create',[WarehouseController::class, 'create'])->name('war
 
 Route::post('warehouse/store' ,[WarehouseController::class, 'store'])->name('warehouse.store');
 
-Route::get('warehouse/show1/{warehouse}',[WarehouseController::class, 'show1'])->name('warehouse.show1')->middleware('auth');
+Route::get('warehouse/show1/{warehouse}',[WarehouseController::class, 'show1'])->name('warehouse.show1');
 
 Route::put('warehouse/update/{warehouse}' ,[WarehouseController::class, 'update'])->name('warehouse.update');
 
 Route::delete('warehouse/delete/{warehouse}',[WarehouseController::class, 'delete'])->name('warehouse.delete');
 
+
+
+
+
 Route::get('article',[ArticleController::class, 'show'])->name('article.show');
 
 //$deletedRows = Flight::where('active', 0)->delete();
+
+
+
+Route::get('/products',[ProductController::class, 'showAll'])->name('products.show');
+
+Route::get('product/create',[ProductController::class, 'create'])->name('product.create');
+
+Route::post('product/store' ,[ProductController::class, 'store'])->name('product.store');
+
+Route::get('product/show1/{product}',[ProductController::class, 'show1'])->name('product.show1');
+
+Route::put('product/update/{product}' ,[ProductController::class, 'update'])->name('product.update');
+
+Route::delete('product/delete/{product}',[ProductController::class, 'delete'])->name('product.delete');
 

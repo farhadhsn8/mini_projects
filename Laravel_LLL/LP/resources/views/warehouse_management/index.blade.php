@@ -16,8 +16,8 @@
     <img align="right" src="img/th1.jpg" width="120" height="120">
 
     <a href="{{route('warehouses.show')}}" class="btn btn-info btn-lg active" role="button" aria-pressed="true">لیست انبارها</a>
-    <a href="#" class="btn btn-info btn-lg active" role="button" aria-pressed="true">لیست محصولات</a>
-    <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">افزودن محصول</a>
+    <a href="{{route('products.show')}}" class="btn btn-info btn-lg active" role="button" aria-pressed="true">لیست محصولات</a>
+    <a href="{{route('product.create')}}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">افزودن محصول</a>
     <a href="{{route('warehouse.create')}}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">افزودن انبار</a>
 
     <hr>
