@@ -7,16 +7,16 @@
         <section class="panel">
 
             <div class="panel-body">
-                <form role="form" method="post">
+                <form role="form"  action="{{route('product.store')}}" method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1">نام محصول  </label>
-                        <input type="text" name="frm[name]" class="form-control" placeholder="نام محصول را وارد کنید">
+                        <input type="text" name="name" class="form-control" placeholder="نام محصول را وارد کنید">
                     </div>
 
 
                     <div class="form-group">
                         <label for="exampleInputPassword1">انبار </label>
-                        <select multiple class="form-control input-lg m-bot15" name="frm[warehouse_id][]"   aria-label="multiple select example">
+                        <select multiple class="form-control input-lg m-bot15" name="warehouse[]"   aria-label="multiple select example">
 
                                 <option value=''> bmbmbmbmb  </option>
 
