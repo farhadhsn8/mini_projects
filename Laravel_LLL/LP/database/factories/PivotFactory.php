@@ -2,17 +2,18 @@
 
 namespace Database\Factories;
 
-use App\Models\Product;
+use App\Models\Pivot;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
-class ProductFactory extends Factory
+class PivotFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Product::class;
+    protected $model = Pivot::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +23,8 @@ class ProductFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word,
+            'warehouse_id' => rand(1,8),
+            'product_id' => rand(1,20),
         ];
     }
 }

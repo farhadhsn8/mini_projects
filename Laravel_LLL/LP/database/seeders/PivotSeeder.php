@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Product;
-use App\Models\User;
+use App\Models\Pivot;
 use Illuminate\Database\Seeder;
 
-class ProductSeeder extends Seeder
+class PivotSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,8 +14,8 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        Product::factory()
-            ->count(40)
+        Pivot::factory()
+            ->count(50)
             ->create();
     }
 }
